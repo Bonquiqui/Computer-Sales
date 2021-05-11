@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+    Carter Bell -- CIS 233 -- Final Project -- Build Your PC
+-->
+
+
+    <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest"> 
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="Carters, Games, Hardware, Personal Computer, PC, Music, Gaming Music" />
+        <meta name="description" content="building PCs, buying games and hardware, and listening to music" />
+        <title>Carter's G + H</title>
+        <link href="CSS/Styles.css" rel="stylesheet" />
+        <link href="CSS/formStyles.css" rel="stylesheet" />
+        <link href="CSS/all.css" rel="stylesheet">
+        <script src="countDown.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="headerNav">
+                <div class="logo">Carters<span> Games + Hardware</span></div>
+                <a class="menu" href="index.html">Home</a>
+                <a class="menu active" href="build-your-PC.html">Build Your PC</a>
+                <a class="menu" href="gaming-music.html">Gaming Music</a>
+                <a class="menu" href="hardware.html">Hardware</a>
+                <a class="menu" href="games.html">Games</a>
+            </nav>
+            <div class="hero-image">
+                <img src="images/pc_build_hero.png" />
+            </div>
+        </header>
+        <article>
+            <h2>Below is our <i class="important-word">PC Building Form</i>! There you can customize the hardware for your own PC by selecting
+            one of the options in any of the following categories: Graphics Card, CPU, MotherBoard, Storage, Cooling System, Ram, 
+            Computer Case, and even LED Lighting.</h2>
+
+            <div id="mp3">
+            <figcaption>Dont forget to get a good PC fan so your's doesn't sound like this!</figcaption>
+            <audio controls src="mp3/fan.mp3">Update needed: Your browser does not support the audio element!</audio>
+            </div>
+
+            <h1>To get <i class="important-word">30%</i> off your first PC build, build and buy your PC within: </h1>
+            <div class="timer">
+                <h1 id="countDown"></h1>
+            </div> 
+            <form action="www.example.com/pc-build/form" method="post">
+                <div id="pcBuild">
+                    <fieldset>
+                        <legend>Select Your Graphics Card</legend>
+                        <div class="formRow">
+                            <input name="graphicsCard" id="GTX-1060" type="radio" />
+                            <label for="GTX-1060">GeForce GTX 1060 
+                        </label>
+                        </div>
+                        
+                        <div class="formRow">
+                            <input name="graphicsCard" id="RX-5700" type="radio" />
+                            <label for="RX-5700">Radeon RX 5700
+                        </label>
+                        </div>
+
+                        <div class="formRow">
+                            <input name="graphicsCard" id="RTX-2070" type="radio" />
+                            <label for="RTX-2070">GeForce RTX 2070
+                        </label>
+                        </div>
+                        <div class="formRow">
+                            <input name="graphicsCard" id="RTX-3090" type="radio" />
+                            <label for="RTX-3090">GeForce RTX 3090
+                        </label>
+                        </div>
+                        
+                        <div class="formRow">
+                            <input name="graphicsCard" id="RX-6800" type="radio" />
+                            <label for="RX-6800">Radeon RX 6800 XT
+                        </label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Select Your Cooling Method</legend>
+                        <div class="formRow">
+                            <input name="cooling" id="beQuiet" type="radio" />
+                            <label for="beQuiet">BeQuiet Pure Rock Slim Fan 
+                        </label>
+                        </div>
+                        
+                        <div class="formRow">
+                            <input name="cooling" id="KrakenX53" type="radio" />
+                            <label for="KrakenX53">Kraken X53 Liquid Cooler
+                        </label>
+                        </div>
+
+                        <div class="formRow">
+                            <input name="cooling" id="KrakenX63" type="radio" />
+                            <label for="KrakenX63">Kraken X63 Liquid Cooler
+                        </label>
+                        </div>
+                        <div class="formRow">
+                            <input name="cooling" id="KrakenX73" type="radio" />
+                            <label for="KrakenX73">Kraken X73 Liquid Cooler
+                        </label>
+                        </div>
+                        
+                        <div class="formRow">
+                            <input name="cooling" id="KrakenZ63" type="radio" />
+                            <label for="KrakenZ63">Kraken Z63 Liquid Cooler w/ LCD
+                        </label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Select Your CPU</legend>
+                        <div class="formRow">
+                            <input name="cpu" id="Ryzen7" type="radio" />
+                            <label for="Ryzen7">AMD Ryzen 7 3800XT 
+                        </label>
+                        </div>
+                        
+                        <div class="formRow">
+                            <input name="cpu" id="intel9" type="radio" />
+                            <label for="intel9">Intel Core i9-10900K
+                        </label>
+                        </div>
+
+                        <div class="formRow">
+                            <input name="cpu" id="RyzenT" type="radio" />
+                            <label for="RyzenT">AMD Ryzen Threadripper 2920X
+                        </label>
+                        </div>
+                        <div class="formRow">
+                            <input name="cpu" id="intelX" type="radio" />
+                            <label for="intelX">Intel Xeon Gold 6242R
+                        </label>
+                        </div>
+                        
+                        <div class="formRow">
+                            <input name="cpu" id="Ryzen9" type="radio" />
+                            <label for="Ryzen9">AMD Ryzen 9 5950X
+                        </label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Select Your Mother Board</legend>
+                        <div class="formRow">
+                            <input name="motherboard" id="gigZ390" type="radio" />
+                            <label for="gigZ390">Gigabyte Z390 UD 
+                        </label>
+                        </div>
+                        
+                        <div class="formRow">
+                            <input name="motherboard" id="misZ390" type="radio" />
+                            <label for="misZ390">MSI Z390-A Pro
+                        </label>
+                        </div>
+
+                        <div class="formRow">
+                            <input name="motherboard" id="misZ490" type="radio" />
+                            <label for="misZ490">MSI Z490-A Pro
+                        </label>
+                        </div>
+                        <div class="formRow">
+                            <input name="motherboard" id="asusZ490" type="radio" />
+                            <label for="asusZ490">ASUS ROG Strix Z490-I Gaming
+                        </label>
+                        </div>
+                        
+                        <div class="formRow">
+                            <input name="motherboard" id="taichiZ490" type="radio" />
+                            <label for="taichiZ490">ASROCK Z490 Taichi
+                        </label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Select Your Storage</legend>
+                        <div class="formRow">
+                            <input name="storage" id="samsung970" type="radio" />
+                            <label for="samsung970">Samsung SD 970 Evo Plus 1TB 
+                        </label>
+                        </div>
+                        
+                        <div class="formRow">
+                            <input name="storage" id="wd250" type="radio" />
+                            <label for="wd250">WD Blue 3D NAND 250GB
+                        </label>
+                        </div>
+
+                        <div class="formRow">
+                            <input name="storage" id="wd550" type="radio" />
+                            <label for="wd550">Western Digital SN550 1TB
+                        </label>
+                        </div>
+                        <div class="formRow">
+                            <input name="storage" id="seagate510" type="radio" />
+                            <label for="seagate510">Seagate Barracuda 510 250GB
+                        </label>
+                        </div>
+                        
+                        <div class="formRow">
+                            <input name="storage" id="intel665" type="radio" />
+                            <label for="intel665">Intel 665p 2TB
+                        </label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Select Your RAM</legend>
+                        <div class="formRow">
+                            <input name="ram" id="gammix10" type="radio" />
+                            <label for="gammix10">XPG Gammix D10 3000 MHz
+                        </label>
+                        </div>
+                        
+                        <div class="formRow">
+                            <input name="ram" id="tforce3200" type="radio" />
+                            <label for="tforce3200">Team T-Force Delta RGB 3200 MHz
+                        </label>
+                        </div>
+
+                        <div class="formRow">
+                            <input name="ram" id="xpg3600" type="radio" />
+                            <label for="xpg3600">XPG Spectrix D50 RGB 3600 MHz
+                        </label>
+                        </div>
+                        <div class="formRow">
+                            <input name="ram" id="gskill3200" type="radio" />
+                            <label for="gskill3200">G.Skill TridentZ RGB 3200 MHz
+                        </label>
+                        </div>
+                        
+                        <div class="formRow">
+                            <input name="ram" id="gskill3600" type="radio" />
+                            <label for="gskill3600">G.Skill TridentZ Royal RGB 3600 MHz
+                        </label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Select Your Computer Case</legend>
+                        <div class="formRow">
+                            <input name="case" id="nzt510" type="radio" />
+                            <label for="nzt510">NZT H510  
+                        </label>
+                        </div>
+                        
+                        <div class="formRow">
+                            <input name="case" id="nzt210" type="radio" />
+                            <label for="nzt210">NZT H210
+                        </label>
+                        </div>
+
+                        <div class="formRow">
+                            <input name="case" id="nzt710" type="radio" />
+                            <label for="nzt710">NZT H710
+                        </label>
+                        </div>
+                        <div class="formRow">
+                            <input name="case" id="nztE510" type="radio" />
+                            <label for="nztE510">NZT H510 Elite
+                        </label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Select Your RGB Lighting</legend>
+                        <div class="formRow">
+                            <input name="lighting" id="nztStrip" type="radio" />
+                            <label for="nztStrip">NZT RGB LED Strips 
+                        </label>
+                        </div>
+                        
+                        <div class="formRow">
+                            <input name="lighting" id="nztKit" type="radio" />
+                            <label for="nztKit">NZT RGB Lighting Kit
+                        </label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div id="button">
+                    <button type="submit">Submit Your Build!</button>
+                </div>
+            </form>
+        </article>
+    </body>
+    <footer>
+        <nav class="footNav">
+            <ul>
+                <li>
+                    <a class="smLink" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i>Facebook</a>
+                </li>
+                <li>
+                    <a class="smLink" href="https://twitter.com/home?lang=en"><i class="fab fa-twitter"></i>Twitter</a>
+                </li>
+                <li>
+                    <a class="smLink" href="mailto:support@CartersGandH.com"><i class="far fa-envelope"></i>Email Us!</a>
+                </li>
+                <li>
+                    <a class="smLink" href="phone:480-111-1111"><i class="fas fa-phone"></i>Call Us!</a>
+                </li>
+            </ul>
+        </nav>
+            <p>Carter's Games + Hardware © 2020 All Rights Reserved</p>
+    </footer>
+</html>

@@ -1,0 +1,56 @@
+div#pcBuild {
+    padding-top: 20px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+fieldset {
+    border-radius: 20px;
+    border-width: medium;
+    border-color: black;
+    color: black;
+    background-color: #348cf1;
+    flex: 0 1 350px;
+    margin: 7px 4px;
+}
+
+fieldset legend {
+    background-color: #242424;
+    color: white;
+    box-shadow: 2px 10px 11px black;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+div.formRow {
+    margin: 10px 0px;
+    flex-wrap: wrap;
+    flex: 1 1 150px;
+}
+
+div.formRow input{
+    cursor: pointer;
+}
+
+button {
+    background-color: #59b3fb;
+    border: 2px solid #151515;
+    padding: .5rem;
+    box-shadow: 2px 10px 11px black;
+    border-radius: 10px;
+    font-family: 'Quicksand';
+    font-weight: 900;
+    color: #000;
+    font-size: 15pt;
+}
+
+button:hover {
+    background-color: #90ceff;
+    cursor: pointer;
+}
+
+div#button {
+    text-align: center;
+    padding: 2rem;
+}
